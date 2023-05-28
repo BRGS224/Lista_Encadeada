@@ -6,6 +6,7 @@ int main(){
     int op=-1;
     fp=fopen("NomeRG10.txt","r");
     Pessoa* cliente=inicializa_lista(fp);
+    quick_sort(cliente, getUltimo(cliente));
     while (op!=0)
     {
         printf("Informe a sua opcao:\n");
@@ -56,6 +57,7 @@ int main(){
             break;
         case 8:{
             imprime_lista(cliente);
+            
         }
             break;
         case 9:{
